@@ -1,0 +1,8 @@
+requirement_id,category,mandatory,status,owner_role,disqualification_risk,due_date,evidence_count,requirement_text,recommended_action
+REQ-0001,security,True,needs_review,security,medium,,1,The vendor must provide SOC 2 Type II evidence issued within the last 12 months.,Human owner must approve before bid response.
+REQ-0002,delivery,True,needs_review,technical_lead,medium,,1,The proposal shall include a production support plan with a maximum first response SLA of 4 business hours.,Human owner must approve before bid response.
+REQ-0003,pricing,True,blocker,finance,medium,,0,The vendor is required to submit pricing in the provided spreadsheet template.,Find approved evidence before drafting a claim.
+REQ-0004,technical,True,draft_ready,technical_lead,medium,,2,The solution must support English and Chinese user interactions.,Draft response can be reviewed with citations.
+REQ-0005,legal,True,needs_review,legal,high,,1,Bidders that do not provide a data retention and deletion policy will be considered non-responsive.,Human owner must approve before bid response.
+REQ-0006,deadline,True,needs_review,proposal_manager,medium,2026-07-15,0,The proposal deadline is 2026-07-15 at 5:00 PM local time.,Confirm the date and add it to the proposal calendar.
+REQ-0007,evaluation,False,needs_review,proposal_manager,low,,0,The vendor should describe prior deployments for public sector customers.,Human owner must approve before bid response.

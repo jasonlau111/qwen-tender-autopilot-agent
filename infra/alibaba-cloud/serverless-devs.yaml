@@ -1,0 +1,27 @@
+edition: "3.0.0"
+name: "bidpilot-qwen"
+access: "default"
+
+vars:
+  region: "ap-southeast-1"
+  serviceName: "bidpilot-qwen"
+  functionName: "rfp-autopilot-agent"
+
+resources:
+  bidpilotQwen:
+    component: "fc3"
+    props:
+      region: "${vars.region}"
+      functionName: "${vars.functionName}"
+      description: "Qwen Cloud tender/RFP autopilot backend"
+      runtime: "custom.debian10"
+      code: "../../"
+      handler: "not-used-by-custom-runtime"
+      timeout: 60
+      memorySize: 512
+      environmentVariables:
+        PYTHONPATH: "/code/src"
+        QWEN_BASE_URL: "https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
+        QWEN_MODEL: "qwen3.7-plus"
+        ALIBABA_CLOUD_REGION: "${vars.region}"
+        ALIBABA_CLOUD_OSS_BUCKET: "bidpilot-qwen-demo"

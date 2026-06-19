@@ -1,0 +1,188 @@
+[
+  {
+    "opportunity_id": "QWEN-RFP-2026-001",
+    "requirement_id": "REQ-0001",
+    "category": "security",
+    "requirement_text": "The vendor must provide SOC 2 Type II evidence issued within the last 12 months.",
+    "normalized_requirement": "The vendor must provide SOC 2 Type II evidence issued within the last 12 months",
+    "mandatory": true,
+    "disqualification_risk": "medium",
+    "source_document": "examples/sample-input.md",
+    "source_section": "RFP Text",
+    "confidence": 0.9,
+    "due_date": null,
+    "owner_role": "security",
+    "evidence_needed": [
+      "SOC 2 Type II report or bridge letter"
+    ],
+    "available_evidence": [
+      {
+        "evidence_id": "EVID-A",
+        "source_document": "Approved Evidence Bundle",
+        "source_section": "Security Overview, section 2.1",
+        "relevance_score": 1.0,
+        "quote_or_summary": "Our platform completed SOC 2 Type II review for the period ending 2026-03-31."
+      }
+    ],
+    "status": "needs_review",
+    "recommended_action": "Human owner must approve before bid response.",
+    "review_notes": "Review-sensitive category or confidence threshold triggered."
+  },
+  {
+    "opportunity_id": "QWEN-RFP-2026-001",
+    "requirement_id": "REQ-0002",
+    "category": "delivery",
+    "requirement_text": "The proposal shall include a production support plan with a maximum first response SLA of 4 business hours.",
+    "normalized_requirement": "The proposal shall include a production support plan with a maximum first response SLA of 4 business hours",
+    "mandatory": true,
+    "disqualification_risk": "medium",
+    "source_document": "examples/sample-input.md",
+    "source_section": "RFP Text",
+    "confidence": 0.9,
+    "due_date": null,
+    "owner_role": "technical_lead",
+    "evidence_needed": [
+      "support policy or SLA terms"
+    ],
+    "available_evidence": [
+      {
+        "evidence_id": "EVID-C",
+        "source_document": "Approved Evidence Bundle",
+        "source_section": "Support Policy, section 3.2",
+        "relevance_score": 0.67,
+        "quote_or_summary": "Enterprise support includes a 4 business hour first response target for priority 2 incidents."
+      }
+    ],
+    "status": "needs_review",
+    "recommended_action": "Human owner must approve before bid response.",
+    "review_notes": "Review-sensitive category or confidence threshold triggered."
+  },
+  {
+    "opportunity_id": "QWEN-RFP-2026-001",
+    "requirement_id": "REQ-0003",
+    "category": "pricing",
+    "requirement_text": "The vendor is required to submit pricing in the provided spreadsheet template.",
+    "normalized_requirement": "The vendor is required to submit pricing in the provided spreadsheet template",
+    "mandatory": true,
+    "disqualification_risk": "medium",
+    "source_document": "examples/sample-input.md",
+    "source_section": "RFP Text",
+    "confidence": 0.9,
+    "due_date": null,
+    "owner_role": "finance",
+    "evidence_needed": [
+      "completed pricing spreadsheet"
+    ],
+    "available_evidence": [],
+    "status": "blocker",
+    "recommended_action": "Find approved evidence before drafting a claim.",
+    "review_notes": "Mandatory requirement has no supporting evidence."
+  },
+  {
+    "opportunity_id": "QWEN-RFP-2026-001",
+    "requirement_id": "REQ-0004",
+    "category": "technical",
+    "requirement_text": "The solution must support English and Chinese user interactions.",
+    "normalized_requirement": "The solution must support English and Chinese user interactions",
+    "mandatory": true,
+    "disqualification_risk": "medium",
+    "source_document": "examples/sample-input.md",
+    "source_section": "RFP Text",
+    "confidence": 0.9,
+    "due_date": null,
+    "owner_role": "technical_lead",
+    "evidence_needed": [
+      "support policy or SLA terms"
+    ],
+    "available_evidence": [
+      {
+        "evidence_id": "EVID-B",
+        "source_document": "Approved Evidence Bundle",
+        "source_section": "Product Localization Guide, section 1.4",
+        "relevance_score": 1.0,
+        "quote_or_summary": "The assistant supports English and Chinese user interactions with locale-aware prompts and output review."
+      },
+      {
+        "evidence_id": "EVID-C",
+        "source_document": "Approved Evidence Bundle",
+        "source_section": "Support Policy, section 3.2",
+        "relevance_score": 0.67,
+        "quote_or_summary": "Enterprise support includes a 4 business hour first response target for priority 2 incidents."
+      }
+    ],
+    "status": "draft_ready",
+    "recommended_action": "Draft response can be reviewed with citations.",
+    "review_notes": "Evidence found; human approval still recommended."
+  },
+  {
+    "opportunity_id": "QWEN-RFP-2026-001",
+    "requirement_id": "REQ-0005",
+    "category": "legal",
+    "requirement_text": "Bidders that do not provide a data retention and deletion policy will be considered non-responsive.",
+    "normalized_requirement": "Bidders that do not provide a data retention and deletion policy will be considered non-responsive",
+    "mandatory": true,
+    "disqualification_risk": "high",
+    "source_document": "examples/sample-input.md",
+    "source_section": "RFP Text",
+    "confidence": 0.9,
+    "due_date": null,
+    "owner_role": "legal",
+    "evidence_needed": [
+      "data retention and deletion policy"
+    ],
+    "available_evidence": [
+      {
+        "evidence_id": "EVID-D",
+        "source_document": "Approved Evidence Bundle",
+        "source_section": "Data Governance Policy, section 5.1",
+        "relevance_score": 0.67,
+        "quote_or_summary": "Customer data can be deleted within 30 days after verified request. Retention periods are configured per contract."
+      }
+    ],
+    "status": "needs_review",
+    "recommended_action": "Human owner must approve before bid response.",
+    "review_notes": "Review-sensitive category or confidence threshold triggered."
+  },
+  {
+    "opportunity_id": "QWEN-RFP-2026-001",
+    "requirement_id": "REQ-0006",
+    "category": "deadline",
+    "requirement_text": "The proposal deadline is 2026-07-15 at 5:00 PM local time.",
+    "normalized_requirement": "The proposal deadline is 2026-07-15 at 5:00 PM local time",
+    "mandatory": true,
+    "disqualification_risk": "medium",
+    "source_document": "examples/sample-input.md",
+    "source_section": "RFP Text",
+    "confidence": 0.9,
+    "due_date": "2026-07-15",
+    "owner_role": "proposal_manager",
+    "evidence_needed": [
+      "approved company evidence"
+    ],
+    "available_evidence": [],
+    "status": "needs_review",
+    "recommended_action": "Confirm the date and add it to the proposal calendar.",
+    "review_notes": "Deadline extracted from the RFP and requires human calendar confirmation."
+  },
+  {
+    "opportunity_id": "QWEN-RFP-2026-001",
+    "requirement_id": "REQ-0007",
+    "category": "evaluation",
+    "requirement_text": "The vendor should describe prior deployments for public sector customers.",
+    "normalized_requirement": "The vendor should describe prior deployments for public sector customers",
+    "mandatory": false,
+    "disqualification_risk": "low",
+    "source_document": "examples/sample-input.md",
+    "source_section": "RFP Text",
+    "confidence": 0.74,
+    "due_date": null,
+    "owner_role": "proposal_manager",
+    "evidence_needed": [
+      "public sector case study or approved customer reference"
+    ],
+    "available_evidence": [],
+    "status": "needs_review",
+    "recommended_action": "Human owner must approve before bid response.",
+    "review_notes": "Review-sensitive category or confidence threshold triggered."
+  }
+]

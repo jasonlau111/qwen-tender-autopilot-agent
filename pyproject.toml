@@ -1,0 +1,10 @@
+[project]
+name = "bidpilot-qwen"
+version = "0.1.0"
+description = "Qwen Cloud autopilot agent for tender and RFP compliance workflows"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Jason Lau" }]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

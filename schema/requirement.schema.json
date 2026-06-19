@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/bidpilot-qwen/requirement.schema.json",
+  "title": "BidPilot Qwen Requirement",
+  "type": "object",
+  "required": [
+    "opportunity_id",
+    "requirement_id",
+    "category",
+    "requirement_text",
+    "normalized_requirement",
+    "mandatory",
+    "disqualification_risk",
+    "source_document",
+    "source_section",
+    "confidence",
+    "owner_role",
+    "evidence_needed",
+    "available_evidence",
+    "status",
+    "recommended_action",
+    "review_notes"
+  ],
+  "properties": {
+    "opportunity_id": { "type": "string" },
+    "requirement_id": { "type": "string", "pattern": "^REQ-[0-9]{4}$" },
+    "category": {
+      "type": "string",
+      "enum": [
+        "eligibility",
+        "technical",
+        "commercial",
+        "legal",
+        "security",
+        "delivery",
+        "pricing",
+        "deadline",
+        "submission",
+        "evaluation",
+        "other"
+      ]
+    },
+    "requirement_text": { "type": "string" },
+    "normalized_requirement": { "type": "string" },
+    "mandatory": { "type": "boolean" },
+    "disqualification_risk": {
+      "type": "string",
+      "enum": ["none", "low", "medium", "high"]
+    },
+    "source_document": { "type": "string" },
+    "source_section": { "type": "string" },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "due_date": { "type": ["string", "null"] },
+    "owner_role": {
+      "type": "string",
+      "enum": [
+        "proposal_manager",
+        "technical_lead",
+        "finance",
+        "legal",
+        "security",
+        "executive",
+        "unassigned"
+      ]
+    },
+    "evidence_needed": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "available_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "source_document",
+          "source_section",
+          "relevance_score",
+          "quote_or_summary"
+        ],
+        "properties": {
+          "evidence_id": { "type": "string" },
+          "source_document": { "type": "string" },
+          "source_section": { "type": "string" },
+          "relevance_score": { "type": "number", "minimum": 0, "maximum": 1 },
+          "quote_or_summary": { "type": "string" }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "not_started",
+        "evidence_found",
+        "draft_ready",
+        "needs_review",
+        "blocker",
+        "approved"
+      ]
+    },
+    "recommended_action": { "type": "string" },
+    "review_notes": { "type": "string" }
+  }
+}
